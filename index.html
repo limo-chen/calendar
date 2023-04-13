@@ -16,7 +16,7 @@
     <header class="siteHeader"><h1>小U的桌面日历</h1></header>
     <div class="calendar">
       <div class="calendar-header">
-        <time>2023年4月</time>
+        <time id="time">2023年4月</time>
       </div>
       <ol class="calendar-weekdays">
         <li>一</li>
@@ -27,59 +27,17 @@
         <li>六</li>
         <li>日</li>
       </ol>
-      <ol class="calendar-days">
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-        <li>29</li>
-      </ol>
+      <ol class="calendar-days" id="days"></ol>
       <div class="calendar-actions">
-        <div class="calendar-actions-left"><button>今天</button></div>
+        <div class="calendar-actions-left">
+          <button id="today">今天</button>
+        </div>
         <div class="calendar-actions-right">
-          <button>上个月</button>
-          <button>下个月</button>
+          <button id="prevMonth">上个月</button>
+          <button id="nextMonth">下个月</button>
         </div>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
