@@ -1,0 +1,61 @@
+/* siteHeader里面的 h1 */
+.siteHeader {
+  padding: 4px 16px;
+}
+.siteHeader > h1 {
+  font-size: 34px;
+}
+/* calendar */
+.calendar {
+  background: white;
+  margin: 16px;
+  border-radius: 24px;
+  color: black;
+  margin-top: 32px;
+}
+.calendar-header {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 18px;
+}
+
+.calendar-header > time {
+}
+.calendar-weekdays {
+  display: flex;
+}
+.calendar-weekdays > li {
+  width: 14.2857%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+}
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar-days > li {
+  width: 14.2857%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+}
+.calendar-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.calendar-actions button {
+  font-size: 12px; /*按钮里面的字体*/
+  height: 24px;
+  padding: 0 8px; /*宽度不要写死，用padding撑起来*/
+}
+.calendar-actions-left {
+}
+.calendar-actions-left > button {
+}
+.calendar-actions-right {
+  display: flex; /*文档流变成弹性文档流*/
+}
+.calendar-actions-right > button {
+}
