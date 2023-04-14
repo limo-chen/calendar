@@ -38,6 +38,7 @@
   text-align: center;
   height: 42px;
   line-height: 42px;
+  position: relative;
 }
 .calendar-days-today {
   background: #fed32c;
@@ -50,6 +51,18 @@
 .calendar-days > li.calendar-days-disabled {
   color: #999;
 }
+.calendar-days > li.calendar-days-hasEvents::after {
+  content: "";
+  border: 1px solid red;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 4px;
+}
+
 .calendar-actions {
   display: flex;
   justify-content: space-between;
@@ -68,4 +81,10 @@
   display: flex; /*文档流变成弹性文档流*/
 }
 .calendar-actions-right > button {
+}
+.events-wrapper {
+  padding: 16px;
+}
+.event-item {
+  padding: 4px 0;
 }

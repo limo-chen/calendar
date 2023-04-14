@@ -79,7 +79,27 @@ function render(time) {
         }
         li.classList.add("calendar-days-selected");
         selectedLi = li; //我自己变成selectedLi
+        if (events) {
+          const fragment = document.createDocumentFragment();
+          events.map((event) => {
+            const div = document.createElement("div");
+            div.classList.add("event-item");
+            div.textContent = event;
+            fragment.append(div);
+          });
+
+          g("#events").innerHTML = "";
+          g("#events").append(fragment);
+        } else {
+          g("#events").innerHTML = "<div>无</div>";
+        }
       };
+      const key = `${year}-${month}-${i}`;
+      const events = window.data[key];
+      console.log(key, events);
+      if (events) {
+        li.classList.add("calendar-days-hasEvents");
+      }
       days.append(li);
       n += 1;
     }
